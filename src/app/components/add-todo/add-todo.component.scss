@@ -1,0 +1,35 @@
+@import "src/sass/variables.scss";
+
+div{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $fontColorLight;
+  padding-bottom: 10px;
+}
+
+input{
+  width: 70%;
+  min-width: 300px;
+  height: 32px;
+  margin: 4px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid $primaryColor;
+}
+
+button{
+  width: 30%;
+  margin: 4px;
+  background: $primaryColor;
+  border: 1px solid $primaryColor;
+  color: white;
+  border-radius: 4px;
+  &:disabled{
+    background: $btnDisabledColor;
+  }
+}
+
+

@@ -1,0 +1,15 @@
+@import "src/sass/variables.scss";
+div{
+  text-align: center;
+  ol{
+    text-align: left;
+    margin: 8px;
+    li{
+      margin: 8px;
+      cursor: pointer;
+    }
+  }
+  p{
+    color: $fontColorLight;
+  }
+}

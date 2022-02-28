@@ -1,0 +1,8 @@
+<div>
+  <h3>Add Todos</h3>
+  <app-add-todo></app-add-todo>
+  <ol *ngIf="todos.length>0" class="todoItemContainer">
+    <li (click)="markCompleteClick(todo.id)" [class.completed]="todo.completed" *ngFor="let todo of todos" >{{todo.title}}</li>
+  </ol>
+  <p *ngIf="todos.length===0">Please add some todos!</p>
+</div>

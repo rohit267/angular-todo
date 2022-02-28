@@ -1,0 +1,7 @@
+<div>
+  <h3>Done Todos</h3>
+  <ul *ngIf="finishedTodos.length>0">
+    <li *ngFor="let todo of finishedTodos">{{todo.title}}</li>
+  </ul>
+  <p *ngIf="finishedTodos.length===0">Please complete some todos!</p>
+</div>

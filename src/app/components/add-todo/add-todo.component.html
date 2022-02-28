@@ -1,0 +1,4 @@
+<div>
+  <input [(ngModel)]="newTodo" placeholder="Enter new todo" type="text" name="newTodo" >
+  <button [disabled]="newTodo.length===0" (click)="addTodoClick()">Add Todo</button>
+</div>
